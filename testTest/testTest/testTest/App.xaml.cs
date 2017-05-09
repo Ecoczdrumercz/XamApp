@@ -14,7 +14,7 @@ namespace testTest
 			InitializeComponent();
 
 			MainPage = new testTest.MainPage();
-            Page1 newPage = new Page1();
+            //Page1 newPage = new Page1();
 		}
 
 		protected override void OnStart ()

@@ -8,20 +8,21 @@
         <ContentPage Padding="10" BackgroundColor="White" Title="Master">
             <ContentPage.Content>
                 <StackLayout Margin="5,10">
-                    <Label Text="Master Page"></Label>
+                    <Label Text="Master Page" ></Label>
                     <Button Text="Second Page" Clicked="Button_Clicked"></Button>
-
+                    
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
     </MasterDetailPage.Master>
     
     <MasterDetailPage.Detail>
-        <ContentPage Padding="10" xmlns:" ">
+        <ContentPage Padding="10">
             <ContentPage.Content>
                 <StackLayout Margin="5,10">
-                    <Label Text="" ></Label> //adfafdafdfafs
+                    <Label x:Name="myLabel" Text="0" HorizontalOptions="CenterAndExpand"></Label> 
                     <Button Text="Click me" Clicked="Button_Clicked_1" HorizontalOptions="Center"></Button>
+                    
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

@@ -9,20 +9,24 @@ namespace testTest
 {
 	public partial class MainPage : MasterDetailPage
 	{
-        int a = 0;
+        public int CookieCount { get; set; }
+        Label label;
 		public MainPage()
 		{
+            CookieCount = 0;
 			InitializeComponent();
-		}
 
+		}
+        
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Page1());
+            //Navigation.PushModalAsync()
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            a++;
+            CookieCount++ ;
+            myLabel.Text = CookieCount.ToString();
         }
     }
 }
